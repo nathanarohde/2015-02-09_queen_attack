@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/bootstrap.css' type='text/css'>
+    <link rel='stylesheet' href='css/styles.css' type='text/css'>
+    <script src='js/jquery-2.1.3.js'> </script>
+    <script src='js/scripts.js'></script>
+    <title>Queen Attack</title>
+  </head>
+  <body>
+    <div class='container'>
+      <h3>Queen Attack</h3>
+
+      <form id='queen-attack'>
+        <div class='form-group'>
+          <label for='queen_start_x'>Enter a coordinate for the queen's starting x space.</label>
+          <input id='queen_start_x' type='number'>
+          <label for='queen_start_y'>Enter a coordinate for the queen's starting y space.</label>
+          <input id='queen_start_y' type='number'>
+
+          <br>
+
+          <label for='queen_target_x'>Enter a coordinate for the queen's target x space.</label>
+          <input id='queen_target_x' type='number'>
+          <label for='queen_target_y'>Enter a coordinate for the queen's target y space.</label>
+          <input id='queen_target_y' type='number'>
+        </div>
+
+        <button type='submit' class='btn'>Find out!</button>
+      </form>
+
+      <div id='result'>
+        <p>The queen can <span class='not'></span> attack this target.</p>
+      </div>
+    </div>
+  </body>
+</html>
